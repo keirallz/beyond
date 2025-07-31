@@ -1,13 +1,6 @@
 /* CSS Zen Garden Custom Design */
 
-/* -------- Global Reset -------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* cool header */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap');
 
 h1, .main-title {
@@ -36,6 +29,13 @@ h1, .main-title {
       2px 2px 6px rgba(0,0,0,0.4),
       0 0 15px rgba(238,9,121,0.9);
   }
+}
+ 
+/* -------- Global Reset -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* -------- Base Styles -------- */
