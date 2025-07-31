@@ -1,0 +1,184 @@
+/* CSS Zen Garden Custom Design */
+
+/* -------- Global Reset -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------- Base Styles -------- */
+body {
+  font-family: Georgia, serif; /* Elegant serif font */
+  color: #1e3a5f; /* Dark navy for strong readability */
+  background: #f8faff; /* Clean light blue/white background */
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
+}
+
+/* -------- Page Wrapper -------- */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* -------- Header -------- */
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background: #1e3a5f; /* Deep navy header */
+  border-bottom: 4px solid #4da3ff;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #d9e6f2;
+  margin-top: 0.5rem;
+}
+
+/* -------- Intro Section -------- */
+.intro {
+  background: #ffffff;
+  color: #1e3a5f;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.intro h3 {
+  color: #1e3a5f;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4da3ff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* -------- Main Content -------- */
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.main h3 {
+  color: #1e3a5f;
+  margin-bottom: 1rem;
+}
+
+.main p {
+  color: #2f4d73;
+  margin-bottom: 1rem;
+}
+
+/* -------- Sidebar -------- */
+.sidebar {
+  background: #f0f6ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #4da3ff;
+  display: flex;
+  flex-direction: column; /* Flexbox layout for stacked sections */
+  gap: 2rem;
+}
+
+.sidebar h3 {
+  color: #1e3a5f;
+  margin-bottom: 0.8rem;
+}
+
+/* -------- Sidebar Lists -------- */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  position: relative;
+  margin: 0.6rem 0;
+  padding-left: 1.5rem;
+  font-weight: 500;
+  color: #1e3a5f;
+}
+
+/* Custom bullet using ::before */
+.sidebar li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4da3ff; /* Bright blue bullet */
+  font-size: 1.2rem;
+}
+
+.sidebar a {
+  color: #1e3a5f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #4da3ff;
+}
+
+/* -------- Footer -------- */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #1e3a5f;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #4da3ff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------- Buttons -------- */
+a.button {
+  display: inline-block;
+  background: #4da3ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+a.button:hover {
+  background: #1e3a5f;
+}
+
+/* -------- Responsive Design -------- */
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr; /* Sidebar stacks below content */
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .sidebar {
+    flex-direction: column;
+  }
+}
